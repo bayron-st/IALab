@@ -1,0 +1,15 @@
+{
+  "grupo_analitico": 17.89901764566527,
+  "prioridad_cliente": 2.779751128931256,
+  "es_fin_de_semana": 1.0043448414930367,
+  "num_muestras_lote": 0.4728842006034668,
+  "sector_cliente": 0.31738438107755584,
+  "num_parametros_solicitados": 0.30752077967165903,
+  "mes_cos": -0.014640226545974855,
+  "sede_laboratorio": -0.015594242070939401,
+  "carga_laboratorio_dia": -0.2905741684369829,
+  "mes_sin": -0.3008604066455902,
+  "tipo_muestra": -0.46232704216604503,
+  "temporada_alta_demanda": -0.6453383260608483,
+  "subtipo_muestra": -1.4956215524681724
+}

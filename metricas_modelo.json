@@ -1,0 +1,47 @@
+{
+  "train": {
+    "MAE_horas": 19.26731051997715,
+    "RMSE_horas": 25.06365226711836,
+    "R2": 0.6318186296005723,
+    "MAPE_pct": 21.47962780177633
+  },
+  "val": {
+    "MAE_horas": 19.782649211456604,
+    "RMSE_horas": 25.870502226057017,
+    "R2": 0.5752010233848539,
+    "MAPE_pct": 22.790781058018332
+  },
+  "test": {
+    "MAE_horas": 19.977051319745545,
+    "RMSE_horas": 26.561745435822345,
+    "R2": 0.5788410298753734,
+    "MAPE_pct": 23.248775018772665
+  },
+  "epochs_entrenados": 187,
+  "arquitectura": {
+    "input_dim": 26,
+    "layer_sizes": [
+      26,
+      128,
+      64,
+      32,
+      1
+    ],
+    "emb_dims": {
+      "tipo_muestra": 2,
+      "subtipo_muestra": 4,
+      "grupo_analitico": 4,
+      "prioridad_cliente": 3,
+      "sector_cliente": 3,
+      "sede_laboratorio": 3
+    },
+    "cardinalities": {
+      "tipo_muestra": 2,
+      "subtipo_muestra": 8,
+      "grupo_analitico": 7,
+      "prioridad_cliente": 3,
+      "sector_cliente": 5,
+      "sede_laboratorio": 4
+    }
+  }
+}
