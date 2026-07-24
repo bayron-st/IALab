@@ -1,0 +1,96 @@
+{
+  "CAT_COLS": [
+    "tipo_muestra",
+    "subtipo_muestra",
+    "grupo_analitico",
+    "prioridad_cliente",
+    "sector_cliente",
+    "sede_laboratorio"
+  ],
+  "NUM_COLS": [
+    "num_parametros_solicitados",
+    "carga_laboratorio_dia",
+    "num_muestras_lote",
+    "es_fin_de_semana",
+    "temporada_alta_demanda",
+    "mes_sin",
+    "mes_cos"
+  ],
+  "cat_maps": {
+    "tipo_muestra": {
+      "Agua": 0,
+      "Suelo": 1
+    },
+    "subtipo_muestra": {
+      "Agrícola": 0,
+      "Contaminado/Industrial": 1,
+      "Potable": 2,
+      "Relleno Sanitario": 3,
+      "Residual/Vertimiento": 4,
+      "Sedimento": 5,
+      "Subterránea": 6,
+      "Superficial": 7
+    },
+    "grupo_analitico": {
+      "DBO5_DQO": 0,
+      "Fisicoquimico_Basico": 1,
+      "Hidrocarburos_HTP": 2,
+      "Metales_Pesados_ICP": 3,
+      "Microbiologico": 4,
+      "Plaguicidas_Cromatografia": 5,
+      "Textura_Fertilidad_Suelo": 6
+    },
+    "prioridad_cliente": {
+      "Express": 0,
+      "Normal": 1,
+      "Urgente": 2
+    },
+    "sector_cliente": {
+      "Agricola": 0,
+      "Consultoria_Ambiental": 1,
+      "Entidad_Publica": 2,
+      "Industrial": 3,
+      "Minero_Energetico": 4
+    },
+    "sede_laboratorio": {
+      "Barranquilla": 0,
+      "Bogota": 1,
+      "Cali": 2,
+      "Medellin": 3
+    }
+  },
+  "cardinalities": {
+    "tipo_muestra": 2,
+    "subtipo_muestra": 8,
+    "grupo_analitico": 7,
+    "prioridad_cliente": 3,
+    "sector_cliente": 5,
+    "sede_laboratorio": 4
+  },
+  "emb_dims": {
+    "tipo_muestra": 2,
+    "subtipo_muestra": 4,
+    "grupo_analitico": 4,
+    "prioridad_cliente": 3,
+    "sector_cliente": 3,
+    "sede_laboratorio": 3
+  },
+  "num_mean": {
+    "num_parametros_solicitados": 4.3837662337662335,
+    "carga_laboratorio_dia": 9.175974025974027,
+    "num_muestras_lote": 2.10974025974026,
+    "es_fin_de_semana": 0.2649350649350649,
+    "temporada_alta_demanda": 0.4961038961038961,
+    "mes_sin": -0.008064015770806562,
+    "mes_cos": -0.007635279382595965
+  },
+  "num_std": {
+    "num_parametros_solicitados": 2.9465891070389674,
+    "carga_laboratorio_dia": 4.62297220628868,
+    "num_muestras_lote": 1.665390134161631,
+    "es_fin_de_semana": 0.4414419734502458,
+    "temporada_alta_demanda": 0.5001472319787701,
+    "mes_sin": 0.6914966001214359,
+    "mes_cos": 0.7227439509430292
+  }
+}

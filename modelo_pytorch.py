@@ -103,6 +103,23 @@ def main(args):
     num_std = df.loc[idx_train, NUM_COLS].std().replace(0, 1)
     df[NUM_COLS] = (df[NUM_COLS] - num_mean) / num_std
 
+    # Artefacto de preprocesamiento: todo lo que una interfaz externa necesita
+    # para transformar una muestra NUEVA exactamente igual que en entrenamiento
+    # (mapeos categoría->índice, media/desviación de las numéricas, y el orden
+    # de las columnas). Sin esto, el modelo guardado (.pt) es inútil fuera de
+    # este script, porque no sabría cómo traducir "Agua"/"Urgente"/etc. a números.
+    preprocesador = {
+        "CAT_COLS": CAT_COLS,
+        "NUM_COLS": NUM_COLS,
+        "cat_maps": cat_maps,
+        "cardinalities": cardinalities,
+        "emb_dims": emb_dims,
+        "num_mean": num_mean.to_dict(),
+        "num_std": num_std.to_dict(),
+    }
+    with open("preprocesador.json", "w", encoding="utf-8") as f:
+        json.dump(preprocesador, f, ensure_ascii=False, indent=2)
+
     y_log = np.log1p(df[TARGET].values.astype(np.float32))
     Xc = df[[c + "_idx" for c in CAT_COLS]].values.astype(np.int64)
     Xn = df[NUM_COLS].values.astype(np.float32)

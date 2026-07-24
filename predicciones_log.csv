@@ -1,0 +1,4 @@
+﻿timestamp_consulta,tipo_muestra,subtipo_muestra,grupo_analitico,num_parametros_solicitados,prioridad_cliente,sector_cliente,sede_laboratorio,carga_laboratorio_dia,num_muestras_lote,es_fin_de_semana,temporada_alta_demanda,mes_recepcion,fecha_recepcion,plazo_comprometido_horas,tiempo_estimado_horas,tiempo_real_horas,estado_entrega_real
+2026-07-23 21:13:08,Agua,Residual/Vertimiento,Metales_Pesados_ICP,5,Normal,Agricola,Bogota,8,1,0,1,7,2026-07-23,96,75.81,,
+2026-07-23 21:18:42,Agua,Potable,Fisicoquimico_Basico,5,Normal,Industrial,Bogota,8,1,0,1,7,2026-07-23,96,30.97,,
+2026-07-23 21:22:37,Agua,Subterránea,Metales_Pesados_ICP,5,Urgente,Minero_Energetico,Medellin,8,1,0,1,7,2026-07-23,72,68.62,,
